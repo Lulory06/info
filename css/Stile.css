@@ -1,0 +1,6 @@
+#contenitore{margin: 0 auto; width: 90%;border: 2px solid red;}
+#intestazione{font-weight: 20px; text-align: center;background-color: yellow;color: purple;}
+#navigazione{font-weight: 20px; background-color: orange;padding: 0 50px;}
+#contenuto{background-color: red;padding: 30px;color: white;min-height: 600px;}
+#footer{background-color: yellow;font-weight: 40px;padding: 20px 70px;}
+#span{padding: 0 300px;}

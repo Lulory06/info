@@ -1,0 +1,25 @@
+/* Questo è il file CSS comune per tutte le pagine del sito*/
+
+/* formattazione menu di pagina */
+ul.flex-container{
+    list-style: none;
+    display: flex;
+}
+
+ul.flex-container li.flex-item {
+    margin: 1rem;
+}
+li.flex-item a {
+    display: block;
+    background-color: #d11717;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: #ece949;
+    text-decoration: none;
+}
+
+li.flex-item a:hover {
+    color: #d11717;
+    background-color: #ece949;
+}
+

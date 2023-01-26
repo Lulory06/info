@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,700;1,400&family=Roboto+Condensed&display=swap');
+
+h1 {
+  font-family: "Arvo", serif;
+  font-weight: 700;
+}
+p.arvo400 {
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+p {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+div.wrapper {
+    width: 45%;
+    display: inline-block;
+}
+
+div.wrblue {
+    color: white;
+    background-color: blue;
+}
+
+div.wrgreen {
+    color: white;
+    background-color: green;
+}
+
+
+
+
+
+
+
+
+

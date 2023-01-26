@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variabili Javascript</title>
+    <script>
+        //scrivere un programma che somma due numeri
+        // input: num1 e num2
+        num1 = prompt("Inserisci il primo numero da sommare");
+        num2 = prompt("Inserisci il secondo numero da sommare");
+        // trasformo la variabile da stringa a numerica
+        window.alert("il tipo di num1 é " + typeof num1);
+        num1 = parseInt(num1)
+        window.alert("il tipo di num1 é " + typeof num1);
+        // elaborazione: somma = num1 + num2
+        somma = num1 + num2;
+        if (somma > 0) {
+            messaggio = "somma positiva";
+        } else {
+            messaggio = "somma NON positiva";
+        }
+        // output: somma
+        document.write(somma);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

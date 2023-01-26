@@ -1,0 +1,39 @@
+body {
+    font-size: 2rem;
+}
+
+ul.flex-container{
+    list-style: none;
+    display: flex;
+}
+
+ul.flex-container li.flex-item {
+    margin: 1rem;
+}
+li.flex-item a {
+    display: block;
+    background-color: yellow;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: rgb(128, 0, 128);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+li.flex-item a:hover {
+    color: yellow;
+    background-color: violet;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

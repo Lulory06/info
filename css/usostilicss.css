@@ -1,0 +1,13 @@
+
+ body {
+     background-color: #ccc;
+ }
+h1 {
+  color: blue !important;
+  font: bold 80px Verdana;
+  border: 40px solid #004700;
+  border-top-color: #fff8e1;
+  border-bottom-color: #9c27b0;
+  text-align: center;
+  background-color: rgb(47, 255, 75);
+}
