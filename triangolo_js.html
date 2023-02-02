@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangolo_js</title>
+    <script>
+        a = prompt("Inserisci un numero a");
+        b = prompt("Inserisci un numero b");
+        c = prompt("Inserisci un numero c");
+        if (a > b + c) {
+            messaggio = " No triangolo"
+        } else {
+            if (b > a + c) {
+                messaggio = " No triangolo"
+            } else {
+               if (c > a + b) {
+                    messaggio = " No triangolo"
+               } else {
+                   if (a == c) {
+                       if (a == b) {
+                        messaggio = " Equilatero"
+                       } else {
+                        messaggio = " Isoscele"
+                       }
+                   } else {
+                       if (a == b) {
+                        messaggio = " Isoscele"
+                       } else {
+                        messaggio = " Scaleno"
+                       }
+                   }
+               }
+            }
+        }
+        document.write(messaggio)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
