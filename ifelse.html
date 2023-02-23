@@ -8,22 +8,27 @@
     <script>
         spesa= prompt("Quanto hai speso?");
         spesa = parseInt(spesa);
+        document.write("Spesa = " + spesa )
         if (spesa > 10){
             if (spesa > 50){
                 if(spesa > 100){
-                    document.write("Sconto 20%")
+                    document.write(" Sconto 20%")
+                    sconto = spesa * 20 / 100
                 }else{
-                    document.write("Sconto 15%")
+                    document.write(" Sconto 15%")
+                    sconto = spesa * 15 / 100
                 }
             }else{
-                document.write("Sconto 10%")
+               document.write(" Sconto 10%")
+               sconto = spesa * 10 / 100
             }
         }else{
-            document.write("No Sconto")
+            document.write(" No Sconto")
         }
+        document.write(" = " + sconto)
+        document.write(" Tot = " + (spesa - sconto))
     </script>
 </head>
 <body>
-    
 </body>
 </html>
