@@ -15,7 +15,7 @@
             <output expression="&quot;inserisci n&quot;" newline="True"/>
             <input variable="n"/>
             <assign variable="somma" expression="0"/>
-            <assign variable="i" expression="1"/>
+            <assign variable="i" expression="0"/>
             <while expression="i&lt;=n">
                 <assign variable="somma" expression="somma + i"/>
                 <assign variable="i" expression="i+1"/>
