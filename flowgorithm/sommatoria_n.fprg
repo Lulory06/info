@@ -20,7 +20,7 @@
                 <assign variable="somma" expression="somma + i"/>
                 <assign variable="i" expression="i+1"/>
             </while>
-            <output expression="&quot;la somma di &quot;&amp;n&amp;&quot; &#232; &quot;&amp;somma" newline="True"/>
+            <output expression="&quot;La somma di &quot;&amp;n&amp;&quot; &#232; &quot;&amp;somma" newline="True"/>
         </body>
     </function>
 </flowgorithm>
