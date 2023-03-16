@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lorenzo.lupi1"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-09 12:41:07 "/>
+        <attribute name="created" value="bG9yZW56by5sdXBpMTtJTkZPMS0wMjsyMDIzLTAzLTA5OyIxMjoxMjoxOCAiOzI5OTU="/>
+        <attribute name="edited" value="bG9yZW56by5sdXBpMTtJTkZPMS0wMjsyMDIzLTAzLTA5OyIxMjo0MTowNyAiOzE7MzEwMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, numero, somma" type="Integer" array="False" size=""/>
+            <output expression="&quot;Quanti numeri vuoi sommare?&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="i" expression="0"/>
+            <assign variable="somma" expression="0"/>
+            <while expression="i&lt;n">
+                <output expression="&quot;Inserisci numero&quot;" newline="True"/>
+                <input variable="numero"/>
+                <assign variable="somma" expression="somma + numero"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="&quot;La somma &#233; &quot;&amp;somma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
