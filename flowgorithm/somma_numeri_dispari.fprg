@@ -4,9 +4,10 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="utente"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2023-03-16 03:36:19 "/>
+        <attribute name="saved" value="2023-03-23 11:24:23 "/>
         <attribute name="created" value="dXRlbnRlO1BDLUxPUkVOWk87MjAyMy0wMy0xNjsiMDM6MDY6NDIgIjsyNTkz"/>
         <attribute name="edited" value="dXRlbnRlO1BDLUxPUkVOWk87MjAyMy0wMy0xNjsiMDM6MzY6MTkgIjsxOzI3MDg="/>
+        <attribute name="edited" value="bG9yZW56by5sdXBpMTtJTkZPMS0wMjsyMDIzLTAzLTIzOyIxMToyNDoyMyAiOzE7MzA5Nw=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -17,11 +18,11 @@
             <assign variable="somma" expression="0"/>
             <assign variable="i" expression="1"/>
             <while expression="i&lt;=n">
-                <if expression="i % 3 == 0 || i % 5 == 0">
-                    <then/>
-                    <else>
+                <if expression="i % 2 == 1">
+                    <then>
                         <assign variable="somma" expression="somma + i"/>
-                    </else>
+                    </then>
+                    <else/>
                 </if>
                 <assign variable="i" expression="i + 1"/>
             </while>
