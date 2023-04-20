@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lorenzo.lupi1"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-20 12:21:50 "/>
+        <attribute name="created" value="bG9yZW56by5sdXBpMTtJTkZPMS0wMjsyMDIzLTA0LTIwOyIxMjowNDozOCAiOzI5OTI="/>
+        <attribute name="edited" value="bG9yZW56by5sdXBpMTtJTkZPMS0wMjsyMDIzLTA0LTIwOyIxMjoyMTo1MCAiOzE7MzA5Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="peso, imc" type="Integer" array="False" size=""/>
+            <declare name="altezza" type="Real" array="False" size=""/>
+            <declare name="ris" type="String" array="False" size=""/>
+            <assign variable="ris" expression="&quot;&quot;"/>
+            <assign variable="imc" expression="0"/>
+            <output expression="&quot;Inserire peso in kg&quot;" newline="True"/>
+            <input variable="peso"/>
+            <output expression="&quot;Inserire altezza in metri&quot;" newline="True"/>
+            <input variable="altezza"/>
+            <assign variable="altezza" expression="altezza * altezza"/>
+            <assign variable="imc" expression="peso / altezza"/>
+            <if expression="imc &lt; 16">
+                <then>
+                    <assign variable="ris" expression="&quot;Grave magrezza&quot;"/>
+                </then>
+                <else>
+                    <if expression="imc &lt; 19">
+                        <then>
+                            <assign variable="ris" expression="&quot;Sottopeso&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="imc &lt; 25">
+                                <then>
+                                    <assign variable="ris" expression="&quot;Normopeso&quot;"/>
+                                </then>
+                                <else>
+                                    <if expression="imc &lt; 32">
+                                        <then>
+                                            <assign variable="ris" expression="&quot;Sovrappeso&quot;"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="ris" expression="&quot;Obeso&quot;"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Calcolo IMC&quot;" newline="True"/>
+            <output expression="imc&amp;&quot; = &quot;&amp;ris" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
