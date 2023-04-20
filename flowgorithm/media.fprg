@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lorenzo.lupi1"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-19 11:49:43 "/>
+        <attribute name="created" value="bG9yZW56by5sdXBpMTtJTkZPMS0wMjsyMDIzLTA0LTE5OyIxMTowMTozNCAiOzI5OTI="/>
+        <attribute name="edited" value="bG9yZW56by5sdXBpMTtJTkZPMS0wMjsyMDIzLTA0LTE5OyIxMTo0OTo0MyAiOzE7MzExMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numeri" type="Integer" array="True" size="10"/>
+            <declare name="indice, divs" type="Integer" array="False" size=""/>
+            <assign variable="indice" expression="0"/>
+            <declare name="media" type="Real" array="False" size=""/>
+            <assign variable="media" expression="0"/>
+            <output expression="&quot;Quanti numeri vuoi fare la media? (Max 10)&quot;" newline="True"/>
+            <input variable="divs"/>
+            <while expression="indice &lt; divs">
+                <output expression="&quot;Inserisci valore elemento dal vettore con indice = &quot; &amp;indice" newline="True"/>
+                <input variable="numeri[indice]"/>
+                <assign variable="media" expression="media + numeri[indice]"/>
+                <assign variable="indice" expression="indice + 1"/>
+            </while>
+            <output expression="&quot;Adesso calcolo la medi dai valori inseriti&quot;" newline="True"/>
+            <assign variable="media" expression="media / indice"/>
+            <output expression="&quot;La media dei numeri inseriti &#232; &quot;&amp;media" newline="True"/>
+            <output expression="&quot;Programma finito&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
