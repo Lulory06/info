@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lorenzo.lupi1"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-27 11:40:11 "/>
+        <attribute name="created" value="TG9yZW56by5sdXBpMTtJTkZPMS0xNTsyMDIzLTA0LTI3OyIxMToyMzowOSAiOzI5Njk="/>
+        <attribute name="edited" value="TG9yZW56by5sdXBpMTtJTkZPMS0xNTsyMDIzLTA0LTI3OyIxMTo0MDoxMSAiOzE7MzA2OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numeri" type="Integer" array="True" size="10"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <while expression="i&lt;10">
+                <output expression="&quot;scrivi il &quot;&amp;i+1&amp;&quot; numero&quot;" newline="True"/>
+                <input variable="numeri[i]"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <assign variable="i" expression="i-1"/>
+            <while expression="i&gt;=0">
+                <output expression="numeri[i]" newline="True"/>
+                <assign variable="i" expression="i-1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
