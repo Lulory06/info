@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lorenzo.lupi1"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-04 11:43:05 "/>
+        <attribute name="created" value="bG9yZW56by5sdXBpMTtJTkZPMS0wMjsyMDIzLTA1LTA0OyIxMTowMzo1NyAiOzI5OTQ="/>
+        <attribute name="edited" value="bG9yZW56by5sdXBpMTtJTkZPMS0wMjsyMDIzLTA1LTA0OyIxMTo0MzowNSAiOzE7MzA5OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num" type="Integer" array="True" size="10"/>
+            <declare name="messaggio" type="String" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="messaggio" expression="&quot;&quot;"/>
+            <assign variable="i" expression="1"/>
+            <while expression="i&lt;=10">
+                <assign variable="num[i-1]" expression="i"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <assign variable="i" expression="0"/>
+            <while expression="i &lt; 10">
+                <assign variable="messaggio" expression="messaggio &amp; num[i] &amp; &quot; &quot;"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="&quot;il mesaggio contiene = &quot; &amp; messaggio" newline="False"/>
+        </body>
+    </function>
+</flowgorithm>
