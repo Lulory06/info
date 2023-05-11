@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="johnjarrel.silang"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-11 12:08:11 "/>
+        <attribute name="created" value="am9obmphcnJlbC5zaWxhbmc7SU5GTzEtMDE7MjAyMy0wNS0xMTsiMTE6MjU6MDQgIjszNDI4"/>
+        <attribute name="edited" value="am9obmphcnJlbC5zaWxhbmc7SU5GTzEtMDE7MjAyMy0wNS0xMTsiMTI6MDg6MTEgIjsxOzM1MzY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num" type="Integer" array="True" size="10"/>
+            <declare name="i, imin" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <assign variable="imin" expression="0"/>
+            <while expression="i &lt; 10">
+                <output expression="&quot;inserisci un valore num&quot;&amp;i+1" newline="True"/>
+                <input variable="num[i]"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <assign variable="i" expression="0"/>
+            <while expression="i &lt; 10">
+                <if expression="num[i] &lt; num[imin]">
+                    <then>
+                        <assign variable="imin" expression="i"/>
+                        <assign variable="i" expression="i+1"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+            <output expression="imin" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
