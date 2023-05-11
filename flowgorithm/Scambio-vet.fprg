@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lorenzo.lupi1"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-11 12:39:50 "/>
+        <attribute name="created" value="bG9yZW56by5sdXBpMTtJTkZPMS0wMjsyMDIzLTA1LTExOyIxMjoyMjoyOCAiOzI5OTI="/>
+        <attribute name="edited" value="bG9yZW56by5sdXBpMTtJTkZPMS0wMjsyMDIzLTA1LTExOyIxMjoyMjozMSAiOzE7am9obmphcnJlbC5zaWxhbmc7SU5GTzEtMDE7MjAyMy0wNS0xMTsiMTE6MjU6MDQgIjtQb3NtaW4tdmV0LmZwcmc7ODEyNw=="/>
+        <attribute name="edited" value="bG9yZW56by5sdXBpMTtJTkZPMS0wMjsyMDIzLTA1LTExOyIxMjozOTo1MCAiOzE7MzEwMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num" type="Integer" array="True" size="10"/>
+            <declare name="i, swap, min" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <while expression="i &lt; 10">
+                <output expression="&quot;inserisci un valore num&quot;&amp;i+1" newline="True"/>
+                <input variable="num[i]"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <assign variable="i" expression="0"/>
+            <assign variable="min" expression="0"/>
+            <while expression="i &lt; 10">
+                <if expression="num[i] &lt; num[min]">
+                    <then>
+                        <assign variable="min" expression="i"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <assign variable="i" expression="0"/>
+            <assign variable="swap" expression="num[min]"/>
+            <assign variable="num[min]" expression="num[0]"/>
+            <assign variable="num[0]" expression="swap"/>
+            <while expression="i &lt; 10">
+                <output expression="&quot;La posizione &quot;&amp;(i+1)&amp;&quot; contiene il valore &quot; &amp; num[i]" newline="True"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
